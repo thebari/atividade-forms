@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade no Forms</title>
+</head>
+
+<body>
+  <main style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <h1>Formulario de Cadastro</h1>
+
+    <form action="submit_form.php" method="post">
+      <label for="name">Nome:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="password">Senha:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <label for="age">Idade:</label><br>
+      <input type="number" id="age" name="age" min="0" required><br><br>
+
+      <label for="telefone">Telefone:</label><br>
+      <input type="tel" id="telefone" name="telefone" required><br><br>
+
+      <label for="website">Site:</label><br>
+      <input type="url" id="website" name="website"><br><br>
+      
+      Data de nascimento:<br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+       <label for="favorite-time">Hora Favorita:</label><br>
+      <input type="time" id="favorite-time" name="favorite-time"><br><br>
+
+      <label for="datetime">Data e Hora:</label><br>
+      <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+      <label for="gender">Sexo:</label><br>
+      <select id="gender" name="gender" required>
+        <option value="">Selecione</option>
+        <option value="male">Masculino</option>
+        <option value="female">Feminino</option>
+        <option value="other">Outro</option>
+      </select><br><br>
+
+      <label for="favorite-color">Cor Favorita:</label><br>
+      <input type="color" id="favorite-color" name="favorite-color"><br><br>
+
+
+     
+      <label for="satisfaction">Nível de Satisfação:</label><br>
+      <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+      Interesses:<br>
+      <input type="checkbox" id="football" name="interests[]" value="futebol">
+      <label for="football">Futebol</label><br>
+      <input type="checkbox" id="programming" name="interests[]" value="programacao">
+      <label for="programming">Programação</label><br>
+      <input type="checkbox" id="games" name="interests[]" value="games">
+      <label for="games">Games</label><br><br>
+
+      <label for="observations">Observações:</label><br>
+      <textarea id="observations" name="observations" rows="4" cols="50"></textarea><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+</body>
+
+</html>
